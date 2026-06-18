@@ -1,65 +1,82 @@
-# 🧠 Modern Task Manager (Todo App)
+# ✅ To-Do Web App – Performance Testing Report
 
-Modern Task Manager is a simple, clean, and responsive task management web application built using HTML, CSS, and Vanilla JavaScript. It allows users to manage daily tasks efficiently with features like adding, editing, deleting, filtering, and tracking progress in real time. All tasks are saved in the browser using LocalStorage, so data is not lost on refresh.
+This is a simple **To-Do Web App** created for demonstrating **performance testing using Google Lighthouse** as part of the Software Quality Assurance (SQA) coursework.
 
-## 🚀 Features
+---
 
-- Add new tasks easily  
-- Mark tasks as completed  
-- Edit existing tasks  
-- Delete individual tasks  
-- Delete all tasks at once  
-- Filter tasks (All, Completed, Pending)  
-- Real-time progress bar showing completion status  
-- Live date and time display  
-- Confetti animation when all tasks are completed  
-- Persistent data storage using LocalStorage  
+## 📌 Features
 
-## 🛠️ Technologies Used
+- Add, delete, and complete tasks
+- Minimalist UI with responsive design
+- Performance optimized
+- Tested using Lighthouse via GitHub-hosted deployment
 
-- HTML5  
-- CSS3  
-- JavaScript (Vanilla JS)  
-- Font Awesome Icons  
-- tsparticles confetti library  
+---
 
-## 📁 Project Structure
+## 🚀 Getting Started
 
-modern-task-manager/
-├── index.html
-├── style.css
-├── main.js
-├── time.js
-└── README.md
+### 1. Clone the Project
 
-## ▶️ How to Run This Project
+```bash
+git clone https://github.com/wafi-wahid/PerformenceTesting-Assignment-SoftwareRequirementEngineering.git
+cd PerformenceTesting-Assignment-SoftwareRequirementEngineering
+```
+### 2. Run the Web App Locally
+Option 1: Open Directly
 
-Clone the repository:
-git clone https://github.com/Rai-bilalsultan/Modern-Task-Manager.git
+Simply double-click on the index.html file to open it in your browser.
 
-Go to project folder:
-cd Modern-Task-Manager
+Option 2: Use Live Server (Recommended)
 
-Open index.html in your browser.
+Open the project in VS Code
 
-## 📸 Preview
+Right-click on index.html
 
-Add screenshot here:
-/assets/preview.png
+Select "Open with Live Server"
+(Make sure you’ve installed the Live Server extension)
 
-## ✨ Future Improvements
+## 📈 Performance Testing with Lighthouse
+Performance testing was conducted using Google Lighthouse integrated in Chrome DevTools.
 
-- Dark/Light mode toggle  
-- Mobile responsive UI  
-- Drag & drop task sorting  
-- User authentication system  
-- Backend integration (Node.js + MongoDB)  
+### 🔍 Steps to Run Lighthouse Audit
+1. Visit the live app:
+🔗 Click here to open the deployed app
 
-## 👨‍💻 Author
+2. Open Chrome DevTools
+(Right-click → Inspect or press Ctrl+Shift+I)
 
-Bilal Sultan  
-Frontend Developer | BSCS Student at Riphah International University  
+3. Go to the "Lighthouse" tab
 
-## 📜 License
+4. Choose:
 
-This project is open source and available under the MIT License.
+Mode: Mobile or Desktop
+
+Category: Performance
+
+5. Click "Generate Report"
+
+## 📝 Test Metrics Evaluated
+First Contentful Paint (FCP) – Measures time to first visual response
+
+Largest Contentful Paint (LCP) – Measures loading performance
+
+Total Blocking Time (TBT) – Time blocked by long tasks
+
+Cumulative Layout Shift (CLS) – Visual stability
+
+Overall Performance Score – Based on weighted metric scores
+
+## 📊 Performance Test Summary
+Scenario	Device	Score	FCP	LCP	TBT	CLS
+Homepage Load	Desktop	95	1.2s	1.5s	50 ms	0.01
+Homepage Load	Mobile	90	1.5s	1.8s	70 ms	0.02
+Add/Delete Task	Both	88–94	~1.3–1.6s	~1.5–1.9s	~60–80 ms	~0.01–0.02
+
+
+## 🌐 Hosted Live
+👉 https://wafi-wahid.github.io/PerformenceTesting-Assignment-SoftwareRequirementEngineering/
+
+You can use this link to perform real-time audits using Lighthouse.
+
+
+
